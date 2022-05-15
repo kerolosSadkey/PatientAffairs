@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A19F53DD-E714-4C1B-A207-FA0FF90B05CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>patientAffairs</RootNamespace>
+    <AssemblyName>patientAffairs</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="itextsharp">
+      <HintPath>E:\cks\repostory\6 Oct-afrad\6-Oct-Afrad\6-Oct-Afrad\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="attatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attatch.Designer.cs">
+      <DependentUpon>attatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buckUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buckUp.Designer.cs">
+      <DependentUpon>buckUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportdied.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportdied.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportfullpatient.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportfullpatient.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportsheet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportsheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetreport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetreport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSheet.cs">
+      <DependentUpon>DataSetSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="family.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="family.Designer.cs">
+      <DependentUpon>family.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="globaleName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="globaleName.Designer.cs">
+      <DependentUpon>globaleName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pateions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pateions.Designer.cs">
+      <DependentUpon>pateions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientDie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientDie.Designer.cs">
+      <DependentUpon>patientDie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryClass.cs" />
+    <Compile Include="reportfullpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportfullpatient.Designer.cs">
+      <DependentUpon>reportfullpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportSheet.Designer.cs">
+      <DependentUpon>reportSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportTousia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportTousia.Designer.cs">
+      <DependentUpon>reportTousia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="restore.Designer.cs">
+      <DependentUpon>restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchpatient.Designer.cs">
+      <DependentUpon>searchpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settingdb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settingdb.Designer.cs">
+      <DependentUpon>settingdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tosuai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tosuai.Designer.cs">
+      <DependentUpon>tosuai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users.Designer.cs">
+      <DependentUpon>users.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="attatch.resx">
+      <DependentUpon>attatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buckUp.resx">
+      <DependentUpon>buckUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportdied.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportdied.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportfullpatient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportfullpatient.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportsheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportsheet.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="family.resx">
+      <DependentUpon>family.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="globaleName.resx">
+      <DependentUpon>globaleName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pateions.resx">
+      <DependentUpon>pateions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientDie.resx">
+      <DependentUpon>patientDie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="reportfullpatient.resx">
+      <DependentUpon>reportfullpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportSheet.resx">
+      <DependentUpon>reportSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportTousia.resx">
+      <DependentUpon>reportTousia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="restore.resx">
+      <DependentUpon>restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchpatient.resx">
+      <DependentUpon>searchpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settingdb.resx">
+      <DependentUpon>settingdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tosuai.resx">
+      <DependentUpon>tosuai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users.resx">
+      <DependentUpon>users.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSetreport.xsc">
+      <DependentUpon>DataSetreport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetreport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetreport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetreport.xss">
+      <DependentUpon>DataSetreport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSheet.xsc">
+      <DependentUpon>DataSetSheet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSheet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSheet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSheet.xss">
+      <DependentUpon>DataSetSheet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="LCC11">
+      <Guid>{EDCD5812-6A06-43C3-AFAC-46EF5D14E22C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

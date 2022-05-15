@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="patientAffairs.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ddddd\SQLEXPRESS</Value>
+    </Setting>
+    <Setting Name="db" Type="System.String" Scope="User">
+      <Value Profile="(Default)">patient</Value>
+    </Setting>
+    <Setting Name="mode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Windows</Value>
+    </Setting>
+    <Setting Name="username" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="leader1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">عميد طبيب/ياسر عمر رياض </Value>
+    </Setting>
+    <Setting Name="leader2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">عقيد طبيب /محمد السيد حسن</Value>
+    </Setting>
+    <Setting Name="leader3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">  محمد زين الفقي</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
